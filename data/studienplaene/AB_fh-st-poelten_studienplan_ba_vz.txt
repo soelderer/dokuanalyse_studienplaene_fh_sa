@@ -1,0 +1,90 @@
+Pfad: dokumentenanalyse/studienplaene/aufbereitet
+Datei: AB_fh-st-poelten_studienplan_ba_vz.txt
+Bibtexkey Originaldatei: fhstp_od_cur
+
+FH: Fachhochschule St. Pölten GmbH
+Studiengang: Soziale Arbeit, BA, VZ
+
+# Lehrveranstaltungstitel                                                ECTS
+# 1. Jahr                                                 
+# 1. Semester
+[1] Dimensionen von Hilfe (Geschichte Sozialer Arbeit, kultur-
+und sozialwissenschaftlicher Kontext Sozialer Arbeit)                    4
+[1] Dokumentation und Reflexion eigener professioneller Entwicklung
+(Portfolio)                                                              2
+[1] Grundrisse der politischen Ökonomie                                  2              
+[1] Internationalisierung in der Sozialen Arbeit                         2
+[1] Kommunikation                                                        1
+[1] Praktikum (120 Stunden)                                              5              
+[1] Praxisfelder und NutzerInnengruppen                                  2              
+[1] Sozialarbeiterische Implikationen signifikanter Krankheiten          3
+[1] Sozialwissenschaftliche Grundlagen – wissenschaftliches Arbeiten     7
+[1] Verfassungsrechtliche Grundlagen der Sozialarbeit                    2
+                                                      
+                                                      
+# 2. Semester 
+[2] Arbeits- und Sozialrecht                                             2     
+[2] Diversität und Gesellschaft – Studienreise                           7
+[2] Dokumentation und Reflexion eigener professioneller Entwicklung
+(Portfolio)                                                              2
+[2] Gesprächsführung I                                                   2
+[2] Gruppendynamik                                                       1              
+[2] Materielle Grundsicherung                                            3              
+[2] Methoden der empirischen Sozialforschung                             3              
+[2] Praxisseminar                                                        3     
+[2] Soziale Diagnostik I                                                 4
+[2] Wahlthema                                                            3
+
+
+# 2. Jahr
+# 3. Semester
+[3] Dokumentation und Reflexion eigener professioneller Entwicklungen
+(Portfolio)                                                              2
+[3] Fallanalysen und Fallverstehen                                       4
+[3] Gesprächsführung II                                                  1
+[3] Gesundheitsförderung und Prävention                                  2
+[3] Philosophisch begründete Ethik und berufsethische Reflexion          2
+[3] Praktikum (300 Stunden) und Praxisseminar                            1
+[3] Sozialpsychiatrische Interventionen und Sucht                        4
+[3] Wahlthema                                                            2
+
+
+# 4. Semester  
+[4] Biographie, Familiendynamik und Intervention (Joint Lecture)         2
+[4] Dokumentation und Reflexion eigener professioneller Entwicklungen
+(Portfolio), Lernen im Gesamtprozess (Fragestellung aus der Praxis)      3
+[4] Fallanalyse und Bachelorarbeit I                                     7
+[4] Familienrecht und Kinder- und Jugendhilfe                            3
+[4] Krisenintervention                                                   2
+[4] Organisation und Hilfe                                               2
+[4] Psychologie und Pädagogik                                            3
+[4] Soziale Diagnostik II und fachliche Stellungnahme                    3
+[4] Sozialraumbezogene Unterstützungsarbeit                              3
+[4] Wahlthema                                                            2
+
+# 3. Jahr
+# 5. Semester
+[5] Case Management                                                      3
+[5] Case Studies in der Primärversorgung – Public Health                 4
+[5] Diversität, Kulturdimensionen und Rechtsordnung                      5
+[5] Dokumentation und Reflexion eigener professioneller Entwicklung
+(Portfolio)                                                              3
+[5] Professionelles Selbstverständnis und Reflexion
+professioneller Dilemmata                                                3
+[5] Projektwerkstatt I                                                   7
+[5] Soziale Gruppenarbeit                                                3
+[5] Sozialpolitik aus verschiedener Sicht                                2
+
+
+# 6. Semester
+[6] Current Issues                                                       2
+[6] Devianz und Strafrecht                                               3
+[6] Dokumentation und Reflexion eigener professioneller Entwicklungen
+(Portfolio)                                                              2
+[6] Inklusionsberatung oder Praktikum (120 Stunden)                      5
+[6] Kommunikation und Performance                                        2
+[6] Kooperationsmanagement im Sozialraum                                 2
+[6] Lösen komplexer sozialpolitischer Fälle                              2
+[6] Projektwerkstatt II (Bachelorarbeit II)                              9
+[6] Supervision                                                          1
+[6] Wahlthema                                                            2

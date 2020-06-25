@@ -1,0 +1,108 @@
+Pfad: dokumentenanalyse/studienplaene/aufbereitet
+Datei: AB_management-center-innsbruck_studienplan_ba_vz.txt
+Bibtexkey Originaldatei: mci_od_cur
+
+FH: Management Center Innsbruck GmbH
+Studiengang: Soziale Arbeit, BA, VZ
+
+# Lehrveranstaltungstitel                                                ECTS
+# 1. Jahr
+# 1. Semester
+[1] Einführung in das Studium                                            1
+[1] Entwicklungspsychologische Grundlagen der Sozialen Arbeit            2
+[1] Geschichte der sozialen Probleme und der Professionalisierung        2
+[1] Grundlagen der Kommunikation                                         1
+[1] Grundlagen der Soziologie                                            2
+[1] Grundlagen des Rechtssystems                                         1
+[1] Kindheit / Jugend / Familie I + II                                   2                          
+[1] Klinische Sozialarbeit                                               2
+[1] Materielle Grundsicherung und Wohnungslosigkeit                      2
+[1] Praxisbegleitendes Seminar I – IV                                    1
+[1] Projektarbeit I – III                                                2
+[1] Projektmanagement / Projektentwicklung I + II                        1
+[1] Rechtsgrundlagen im Bereich Gesundheit                               1
+[1] Rechtsgrundlagen zu Kindheit / Jugend / Familie I + II               2
+[1] Rechtsgrundlagen zu materieller Grundsicherung u. Wohnungslosigkeit  1
+[1] Sozial- und Migrationspolitik I                                      1
+[1] Sozialversicherungsrechtliche Grundlagen der Sozialen Arbeit         1
+[1] Theorien der Sozialen Arbeit I – III                                 2
+[1] Wissenschaftliches Arbeiten                                          3
+
+
+# 2. Semester
+[2] Berufstätigkeit / Erwerbsarbeitslosigkeit                            2
+[2] Delinquenz                                                           2
+[2] Dis / Ability                                                        2
+[2] Einführung in die Menschenrechte                                     1
+[2] Empirische Sozialforschung I + II                                    2
+[2] Erziehungswissenschaftliche Grundlagen der Sozialen Arbeit           2
+[2] Gesprächsführung und Beratung in der Sozialen Arbeit I + II          2
+[2] Grundlagen des methodischen Handelns                                 2
+[2] Informationspraktikum                                                2
+[2] Medizinische Grundlagen der Sozialen Arbeit                          2
+[2] Praxisbegleitendes Seminar I – IV                                    1 
+[2] Projektarbeit I – III                                                2
+[2] Rechtsgrundlagen zu Delinquenz                                       1
+[2] Rechtsgrundlagen zu Kindheit / Jugend / Familie I + II               1
+[2] Rechtsgrundlagen zur Berufstätigkeit / Erwerbsarbeitslosigkeit       1
+[2] Schulsozialarbeit                                                    1
+[2] Sozialpsychologische Grundlagen der Sozialen Arbeit I + II           1
+[2] Theorien der Sozialen Arbeit I – III                                 2 
+[2] Wahlpflichtfach I – IV (semesterübergreifendes WPF)                  1
+
+
+# 2. Jahr
+# 3. Semester
+[3] Alter(n)                                                             2
+[3] Empirische Sozialforschung I + II                                    1
+[3] Gemeinwesenarbeit                                                    2
+[3] Gesprächsführung und Beratung in der Sozialen Arbeit I + II          1
+[3] Kindheit / Jugend / Familie I + II                                   1
+[3] Krisenintervention                                                   2
+[3] Migration                                                            3
+[3] Persönlichkeitsentwicklung                                           2
+[3] Praxisbegleitendes Seminar I – IV                                    1
+[3] Projektarbeit I – III                                                2
+[3] Psychische Erkrankung und Sucht                                      3
+[3] Rechtsgrundlagen zu Migration                                        2
+[3] Sozial- und Migrationspolitik II                                     3
+[3] Soziale Arbeit mit traumatisierten Personen                          1
+[3] Sozialpsychiatrie                                                    2
+[3] Theorien der Sozialen Arbeit I – III                                 1
+[3] Wahlpflichtfach I – IV (semesterübergreifendes WPF)                  1
+
+
+# 4. Semester
+[4] Berufspraktikum                                                     23
+[4] Praxisbegleitendes Seminar I – IV                                    7
+
+
+# 3. Jahr
+# 5. Semester
+[5] Arbeit mit Gruppen                                                   3
+[5] Bachelorarbeit Seminar I + II                                        1
+[5] Gender / Diversity Training                                          2
+[5] Methoden der Sozialpädagogik                                         3
+[5] Projektmanagement / Projektentwicklung I + II                        3
+[5] Soziale Arbeit und Dritter Sektor                                    2
+[5] Sozialpsychologische Grundlagen der Sozialen Arbeit I + II           2
+[5] Sozialräumliche Strategien u. Regionalisierung in der Soz. Arbeit    3
+[5] Transkulturelle Kommunikation                                        3
+[5] Virtuelle Soziale Arbeit                                             3
+[5] Wahlpflichtfach I – IV (semesterübergreifendes WPF)                  2
+[5] Ökonomische Grundlagen der Sozialen Arbeit                           3
+
+
+# 6. Semester
+[6] Bachelorarbeit                                                      12
+[6] Bachelorarbeit Seminar I + II                                        1
+[6] Bachelorprüfung                                                      1
+[6] Ethik der Sozialen Arbeit                                            3
+[6] Integrative Fallarbeit                                               2
+[6] Klinische und Gesundheitspsychologie                                 2
+[6] Mediation                                                            1
+[6] Offene Jugendarbeit                                                  2
+[6] Qualitätssicherung und Administration in der Sozialen Arbeit         2
+[6] Trauerarbeit                                                         1
+[6] Wahlpflichtfach I – IV (semesterübergreifendes WPF)                  1
+[6] Öffentlichkeitsarbeit / Medienarbeit                                 2

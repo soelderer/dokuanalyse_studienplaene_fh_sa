@@ -1,0 +1,223 @@
+---
+title: 'Dokumentenanalyse BA-Studienpläne der Sozialen Arbeit in Österreich: Quantitative
+  Auswertung reflexiver Lehrveraltungen'
+author: "Paul Sölder"
+output:
+  html_document
+---
+
+Hier sind die Ergebnisse einer Dokumentenanalyse der BA-Studienpläne aller FHs der Sozialen Arbeit in Österreich dargestellt.
+Sie wurden im Zuge einer Bachelorarbeit mittels qualitativer Inhaltsanalyse nach Mayring auf (selbst)reflexiven Charakter untersucht.
+Zur Inhaltsanalyse wurde die R-Bibliothek "RQDA" verwendet, das RQDA-Projekt ist in der SQLite-Datei "data/dokuanalyse-rqda.rqda" gespeichert.
+Die ECTS der Lehrveranstaltungen wurden für quantitative Auswertung seperat codiert.
+Hier sind die Ergebnisse der qualitativen und quantitativen Auswertung zu finden.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Dependencies - Bibliotheken laden
+library(pacman)
+library(ggplot2)
+library(reshape2)
+library(RSQLite)
+library(psych)
+library(xtable)
+
+# Funktionsdefinitionen für Min, Max, Median
+colMax <- function(X) apply(X, 2, max)
+colMin <- function(X) apply(X, 2, min)
+colMedian <- function(X) apply(X, 2, median)
+
+# Qualitative Inhaltsanalyse nach Mayring wurde zuvor mit RQDA durchgeführt
+# RQDA ist eine R-Library für qualitative Analysen mit grafischer Oberfläche zum codieren usw.
+# RQDA speichert die Daten in einer SQLite-Datenbank, die mit R ausgelesen werden kann
+# (data/dokuanalyse-rqda.rqda)
+# Zum Überprüfen der Codierungen bzw. Anzeigen der codierten Originaldateien/Studienpläne
+# wäre RQDA notwendig -- jedoch seit 2016 nicht mehr weiterentwickelt
+# Daten können jedoch mit RSQLite ausgelesen werden
+
+# Datenbankverbindung aufbauen
+sqlite <- dbDriver("SQLite")
+qdadb <- dbConnect(sqlite, "data/dokuanalyse-rqda.rqda")
+
+# leere Vektoren für diverse Daten initialisieren
+fhname <- character(9) # Name der FH
+praxis_ects <- numeric(9) # ECTS praxisbegleitender LV 
+biografie_pers_ects <- numeric(9) # ECTS sonstiger reflexiver LV (Biografie-, Persönlichkeitsreflexion)
+belastung_ects <- numeric(9) # ECTS von LV, die speziell Belastungen reflektieren
+
+# gesamt-ECTS der Bachelorprogramme
+ba_ects <- 180
+
+```
+
+# Quantitative Analyse
+
+```{r}
+
+# Datenbankabfragen: FH-Name und Reflexions-ECTS für alle Studiengänge
+
+# RQDA hat folgende interne Tabellenstruktur (Auszug):
+# Tabelle 'fileattr': enthält Eigenschaften, die den Quelldateien zugewiesen werden können im Schlüssel-Werte Format als jeweils eigenen Datensatz
+# variable = Schlüssel
+# value = Wert
+# fileId = Quelldatei-ID
+# hier wurden die FH-Namen mit RQDA definiert:
+# z. B: variable 'fhname' mit value 'Management Center Innsbruck' und fileId '9' 
+
+# Tabelle 'coding': enthält alle Codierungen als jeweils eigenen Datensatz
+# fid = Quelldatei-ID (txt-Dateien mit den Studienplänen), 1-9
+# cid = Code-ID (einzelne Codes des qualitativen Kategoriensystems)
+
+# relevant sind hier:
+# cid = 2: ects-praxisreflexion (ECTS praxisbegleitender LV)
+# cid = 4: ects-biografie-persoenlichkeit (ECTS biografie-, persönlichkeits-, und sonstiger selbstreflexiver LV)
+# cid = 8: ects-belastungen (ECTS von LV, die Belastungen reflektieren)
+# diese IDs wurden händisch ausgelesen
+# codiert wurde zuvor mit RQDA. ECTS wurden seperat codiert, sodass ein Coding jeweils nur die ECTS-Anzahl einer bestimmten LV umfasst
+
+# Schleife durch alle 9 Studiengänge bzw. Quelldatei-IDs
+for (fid in 1:9) {
+  # FH-Name ist als Attribut der Quelldateien gespeichert -> auslesen 
+  # SQL-Abfrage
+  sqlquery <- dbGetQuery(qdadb, paste("select value from fileattr where variable='fhname' and fileID=", fid))
+  # Ergebnis (FH-Name) in Vektor speichern
+  fhname[fid] <- sqlquery$value
+    
+  # ECTS der einzelnen praxisbegleitenden LVs (cid = 2)
+  # SQL-Abfrage: SUMME aller praxisbegleitenden ECTS für die jeweilige FH mit SQL berechnen
+  sqlquery <- dbGetQuery(qdadb, paste("select SUM(seltext) from coding where cid=2 and fid=", fid, " and status=1"), sep="")
+  # Ergebnis (Summe aller praxisbegleitenden ECTS) in Vektor speichern
+  praxis_ects[fid] <- sqlquery$`SUM(seltext)`
+  
+  # ECTS der einzelnen biografie-/persoenlichkeits-/unspezifischer reflexionsseminare (cid = 4)
+  # SQL-Abfrage: SUMME aller unspezifischen Reflexionsseminare für die jeweilige FH mit SQL berechnen
+  sqlquery <- dbGetQuery(qdadb, paste("select SUM(seltext) from coding where cid=4 and fid=", fid, " and status=1"), sep="")
+  # Ergebnis (Summe aller sonstigen reflexiven ECTS) in Vektor speichern
+  biografie_pers_ects[fid] <- sqlquery$`SUM(seltext)`
+  
+  # ECTS der einzelnen belastungsbezogenen LVs (cid = 8)
+  # SQL-Abfrage: SUMME aller belastungsbezogenen LV für die jeweilige FH mit SQL berechnen
+  sqlquery <- dbGetQuery(qdadb, paste("select SUM(seltext) from coding where cid=8 and fid=", fid, " and status=1"), sep="")
+  # Ergebnis (Summe aller belastungsbezogenen ECTS) in Vektor speichern
+  belastung_ects[fid] <- sqlquery$`SUM(seltext)`  
+}
+
+# nicht definierte Werte (N/A) mit 0 ersetzen für weitere Berechnung
+praxis_ects[is.na(praxis_ects)] <- 0
+biografie_pers_ects[is.na(biografie_pers_ects)] <- 0
+belastung_ects[is.na(belastung_ects)] <- 0
+
+# Summe der reflexiven ECTS pro FH in eigenem Vektor speichern/berechnen
+reflexion_ects_gesamt <- praxis_ects + biografie_pers_ects + belastung_ects
+
+# prozentuellen Anteil am Curriculum berechnen und in eigenem Vektor speichern
+prozent_reflexion <- reflexion_ects_gesamt / ba_ects * 100
+
+# data frame aus allen Vektoren erzeugen
+ectsframe <- data.frame(fhname, praxis_ects, biografie_pers_ects, belastung_ects, reflexion_ects_gesamt, prozent_reflexion)
+
+kennwert <- c("Minimum", "Maximum", "Mittel", "Median")
+minvector <- colMin(ectsframe[,c("praxis_ects", "biografie_pers_ects", "belastung_ects", "reflexion_ects_gesamt", "prozent_reflexion")])
+maxvector <- colMax(ectsframe[,c("praxis_ects", "biografie_pers_ects", "belastung_ects", "reflexion_ects_gesamt", "prozent_reflexion")])
+meanvector <- colMeans(ectsframe[,c("praxis_ects", "biografie_pers_ects", "belastung_ects", "reflexion_ects_gesamt", "prozent_reflexion")])
+medianvector <- colMedian(ectsframe[,c("praxis_ects", "biografie_pers_ects", "belastung_ects", "reflexion_ects_gesamt", "prozent_reflexion")])
+
+minframe = as.data.frame(t(minvector))
+maxframe = as.data.frame(t(maxvector))
+meanframe = as.data.frame(t(meanvector))
+medianframe = as.data.frame(t(medianvector))
+
+ects_descriptives <- rbind(minframe, maxframe, meanframe, medianframe)
+ects_descriptives <- cbind(kennwert, ects_descriptives)
+```
+
+
+```{r results = 'asis'}
+
+# leere Tabelle erzeugen
+#table = matrix(NA, nrow=9, rcol=6)
+
+# Spaltennamen
+#colnames(tables) = c("Fachhochschule", "ECTS LV Praxisbegleitung", "ECTS LV Selbstreflexion", "ECTS LV Belastungen", "ECTS reflexiv gesamt", "Anteil am Curriculum (%)")
+
+knitr::kable(ectsframe, digits=2, col.names = c("Fachhochschule", "ECTS LV Praxisbegleitung", "ECTS LV Selbstreflexion", "ECTS LV Belastungen", "ECTS reflexiv gesamt", "Anteil am Curriculum (%)"))
+
+knitr::kable(ects_descriptives, digits=2, col.names = c("Kenngröße", "ECTS LV Praxisbegleitung", "ECTS LV Selbstreflexion", "ECTS LV Belastungen", "ECTS reflexiv gesamt", "Anteil am Curriculum (%)"))
+```
+
+```{r}
+# grafik ECTS
+ectsplot <- qplot(
+  ectsframe$fhname,
+  ectsframe$reflexion_ects_gesamt,
+  ylab = "ECTS reflexive LV",
+) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1), axis.title.x = element_blank())
+
+# grafik prozentuell
+prozentplot <- qplot(
+  ectsframe$prozent_reflexion,
+  ectsframe$fhname) +
+    theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_text(size=16, color="black"), axis.text.x = element_text(size=14, color="black"))
+
+# bar chart anteile der reflexiven ECTS
+# datenframe umformen fuer bar plot
+barplotdata <- melt(ectsframe, id.vars='fhname', measure.vars=c('praxis_ects', 'biografie_pers_ects', 'belastung_ects'))
+
+# farbschema
+cbPalette <- c("#4991c5", "#ff9a30", "#999999", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")  
+
+barchart <- ggplot(data=barplotdata, aes(fill=variable, x=value, y=fhname)) +
+  geom_bar(position="stack", stat="identity", width=0.5) +
+  labs(x="ECTS", fill ="LV-Kategorie") +
+  theme(axis.text.y = element_text(size=16, color="black"),
+        axis.text.x = element_text(size=14, color="black"),
+        axis.title.y = element_blank(),
+        legend.position = c(.985, .38),
+        legend.justification = c("right", "top"),
+        legend.title = element_text(size=16),
+        legend.text = element_text(size=14)
+        ) +
+  scale_fill_manual(values=cbPalette, labels=c("Praxisbegleitung", "Sonstige Selbstreflexion", "Belastungen"))
+
+```
+
+
+
+```{r fig.height=4, fig.width=10, dev='svg'}
+prozentplot
+barchart
+```
+
+# Qualitative Ergebnisse: Liste der LV-Titel mit reflexivem Inhalt
+Im Folgenden sind die LV-Titel aufgelistet.
+
+```{r, results="asis", echo=FALSE}
+
+# cid = 1: LV-Titel Praxisbegleitung
+# cid = 3: LV-Titel Biografie-, Persönlichkeits- und sonstiger Reflexion
+# cid = 7: LV-Titel zu Belastungen
+for (cid in c(1,3,7)) {
+  if(cid == 1)
+    cat("### Praxisbegleitende Lehrveranstaltungen\n\n")
+  else if (cid == 3)
+    cat("### Lehrveranstaltungen zu Biografie-, Persönlichkeits- und sonstiger Reflexion\n\n")
+  else
+    cat("### Lehrveranstaltungen zu Belastungen\n\n")
+  
+  for (fid in 1:9) {
+    # SQL-Abfrage: Titel aller praxisbegleitenden LV (cid = 1)
+    sqlquery <- dbGetQuery(qdadb, paste("select seltext from coding where cid=", cid, " and fid=", fid, " and status=1"), sep="")
+    # Ergebnis (Summe aller praxisbegleitenden ECTS) in Vektor speichern
+    praxis_titel <- sqlquery$seltext
+    
+    cat("#### ", fhname[fid], "\n", sep="")
+    
+    lapply(praxis_titel, function(titel) {
+      cat("* ", titel, "\n", sep="") 
+    })
+    
+    cat("\n")
+  }
+}
+```

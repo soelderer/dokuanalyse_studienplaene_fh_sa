@@ -1,0 +1,154 @@
+Pfad: dokumentenanalyse/studienplaene/aufbereitet
+Datei: AB_fh-kaernten_studienplan_ba_vz.txt
+Bibtexkey Originaldatei: fhkaernten_od_cur
+
+FH: Fachhochschule Kärnten
+Studiengang: Soziale Arbeit, BA, VZ
+
+# Lehrveranstaltungstitel                                                ECTS
+# 1. Jahr
+# 1. Semester
+[1] Das akzeptierende Gespräch UE                                        2,0 
+[1] Einführung in Psychologie, Pädagogik und Soziologie VO               3,0 
+[1] Einführung in die Soziale Arbeit VO                                  2,0 
+[1] Geschichte der Sozialen Arbeit VO                                    3,0 
+[1] Psychologie: Einführung VO                                           1,0 
+[1] Pädagogik: Einführung VO                                             1,0 
+[1] Recht in der Sozialen Arbeit VO                                      2,0 
+[1] Sozialphilosophie VO                                                 4,0 
+[1] Soziologie: Einführung VO                                            1,0 
+[1] Techniken Wissenschaftlichen Arbeitens SE                            2,0 
+[1] Textverarbeitung und Gestaltung SE                                   2,0 
+[1] Wirtschaftliches Denken und Handeln in der Sozialen Arbeit 1 VO      2,0 
+[1] Wissenschaftstheoretische Grundlagen VO                              1,0 
+[1] Wissenschaftstheorie in der Sozialen Arbeit SE                       1,0 
+
+Wahlpflichtfach: Wahlpflichtfach Sprache 1 
+[1] Italienisch UE                                                       2,0 
+[1] Slowenisch UE                                                        2,0 
+
+
+# 2. Semester
+[2] Beratung UE                                                          2,0 
+[2] Berufsfeldexploration BOPR                                           3,0 
+[2] Disziplinäre Bezüge des Kindes- und Jugendalters SE                  2,0 
+[2] Handlungsfelder VO                                                   2,0 
+[2] Konzepte und Methoden ILV                                            3,0 
+[2] Multiprofessionalität im Lebensalter SE                              2,0 
+[2] Prävention SE                                                        2,0 
+[2] Psychologie: Entwicklung SE                                          2,0 
+[2] Pädagogik: Ganztagsbildung SE                                        2,0 
+[2] Recht: Autonome Lebensgestaltung VO                                  2,0 
+[2] Selbstreflexive Kompetenzen UE                                       1,0 
+[2] Soziologie: Sozialisation SE                                         2,0 
+[2] Theoretische Ansätze: Grundlagen VO                                  3,0 
+
+Wahlpflichtfach: Wahlpflichtfach Sprache 2 
+[2] Italienisch - Lebensalter UE                                         2,0 
+[2] Slowenisch - Lebensalter UE                                          2,0 
+
+
+# 2. Jahr
+# 3. Semester
+[3] Diagnostisches Fallverstehen UE                                      2,0 
+[3] Disziplinäre Bezüge des Erwachsenenalters/ Erwerbslebens SE          2,0 
+[3] Gesundheitsförderung SE                                              2,0 
+[3] Handlungsfelder VO                                                   2,0 
+[3] Konzepte und Methoden ILV                                            2,0 
+[3] Multiprofessionalität im Lebensalter SE                              2,0 
+[3] Projektentwicklung UE                                                3,0 
+[3] Präsentationstechnik UE                                              1,0 
+[3] Qualitative Methoden: Einführung ILV                                 3,0 
+[3] Recht: Verlust der Privatautonomie VO                                2,0 
+[3] Reflexionstechniken UE                                               2,0 
+[3] Sozialpolitik SE                                                     3,0 
+[3] Theoretische Grundkonzepte Sozialer Arbeit ILV                       2,0 
+
+Wahlpflichtfach: Wahlpflichtfach Sprache 3 
+[3] Italienisch - Lebensalter UE                                         2,0 
+[3] Slowenisch - Lebensalter UE                                          2,0 
+
+
+# 4. Semester
+[4] Disziplinäre Bezüge des Alters/ns SE                                 2,0          
+[4] Gerontologie SE                                                      2,0          
+[4] Handlungsfelder VO                                                   2,0          
+[4] Konzepte und Methoden ILV                                            2,0          
+[4] KriseninterventionSE                                                 2,0          
+[4] Multiprofessionalität im Lebensalter SE                              2,0          
+[4] Professionelles Handeln VO                                           2,0          
+[4] Projektdurchführung UE                                               4,5          
+[4] Quantitative Designs und Methoden ILV                                3,0          
+[4] Recht: Arbeitsrecht VO                                               1,5          
+[4] Reflexive Kompetenzen UE                                             2,0          
+[4] Vorbereitungsseminar SE                                              3,0          
+
+Wahlpflichtfach: Wahlpflichtfach Sprache 4 
+[4] Italienisch - Lebensalter UE                                         2,0          
+[4] Slowenisch - Lebensalter UE                                          2,0          
+
+
+# 3. Jahr
+# 5. Semester
+[5] Aktivierende Ansätze SE                                              3,0 
+[5] Berufspraktikum BOPR                                                12,0 
+[5] Ethik: Ethik in der technisierten Welt SE                            2,0 
+[5] Kolloquium zur Bachelorarbeit KO                                     1,0 
+[5] Organisatorische Rahmenbedingungen Sozialer Arbeit SE                2,0 
+[5] Reflexionsseminar zum Berufspraktikum KO                             1,0 
+
+Vertiefung: Bildung und Soziale Arbeit 
+[5] Bezugsdisziplinen SE                                                 4,0 
+[5] Handlungsfelder VO                                                   3,0 
+[5] Recht SE                                                             2,0 
+
+Vertiefung: Gender/ Diversity 
+[5] Bezugsdisziplinen SE                                                 4,0 
+[5] Handlungsfelder VO                                                   3,0 
+[5] Recht SE                                                             2,0 
+
+Vertiefung: Internationale Soziale Arbeit 
+[5] Bezugsdisziplinen SE                                                 4,0 
+[5] Handlungsfelder VO                                                   3,0 
+[5] Recht SE                                                             2,0 
+
+Vertiefung: Kinder- und Jugendhilfe 
+[5] Bezugsdisziplinen SE                                                 4,0 
+[5] Handlungsfelder VO                                                   3,0 
+[5] Recht SE                                                             2,0 
+
+Vertiefung: Sozialmanagement/ Sozialwirtschaft 
+[5] Bezugsdisziplinen SE                                                 4,0 
+[5] Handlungsfelder VO                                                   3,0 
+[5] Recht SE                                                             2,0 
+
+
+# 6. Semester
+[6] Bachelorarbeit/ Kolloquium KO                                       10,0 
+[6] Ethik: Menschenrecht und Soziale Arbeit ILV                          2,0 
+[6] Kommunikation mit herausfordernden KlientInnen UE                    2,0 
+[6] Kreativität UE                                                       3,0 
+[6] Politische Bildung SE                                                2,0 
+[6] Professionelle Identität/ Berufsethik ILV                            2,0 
+[6] Verwaltungsrecht ILV                                                 2,0 
+[6] Wirtschaftliches Denken und Handeln in der Sozialen Arbeit 2 VO      2,0 
+
+Vertiefung: Bildung und Soziale Arbeit 
+[6] Fachspezifische Kompetenzen UE                                       2,0 
+[6] Konzepte und Methoden ILV                                            3,0 
+
+Vertiefung: Gender/ Diversity 
+[6] Fachspezifische Kompetenzen UE                                       2,0 
+[6] Konzepte und Methoden ILV                                            3,0 
+
+Vertiefung: Internationale Soziale Arbeit 
+[6] Fachspezifische Kompetenzen UE                                       2,0 
+[6] Konzepte und Methoden ILV                                            3,0 
+
+Vertiefung: Kinder- und Jugendhilfe 
+[6] Fachspezifische Kompetenzen UE                                       2,0 
+[6] Konzepte und Methoden ILV                                            3,0 
+
+Vertiefung: Sozialmanagement/ Sozialwirtschaft 
+[6] Fachspezifische Kompetenzen UE                                       2,0 
+[6] Konzepte und Methoden ILV                                            3,0 

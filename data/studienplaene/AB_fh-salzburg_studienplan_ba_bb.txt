@@ -1,0 +1,82 @@
+Pfad: dokumentenanalyse/studienplaene/aufbereitet
+Datei: AB_fh_salzburg_studienplan_ba_bb.txt
+Bibtexkey Originaldatei: fhsbg2019_cur
+
+FH: Fachhochschule Salzburg GmbH
+Studiengang: Soziale Arbeit, BA, BB
+
+# Lehrveranstaltungstitel                                                ECTS
+# 1. Jahr
+# 1. Semester
+[1] Der Wissenschaftsprozess und seine Methoden                          3
+[1] Einführung in die Geschichte Sozialer Arbeit                         3
+[1] Grundlagen und Dimensionen zu Diversity und Intersektionalität       6
+[1] Grundlegende Begriffe, Konzepte und Theorien                         3
+[1] Gruppenprozesse verstehen und beeinflussen                           2 
+[1] Soziale Arbeit als Wissenschaft                                      4
+[1] Sozialphilosophische und wertebezogene Aspekte                       3
+[1] Symposium Ethik und Nachhaltigkeit                                   3
+[1] Wissenschaftl. Arbeiten, Schreiben, Präsentieren                     3
+
+
+# 2. Semester
+[2] Disability und Behinderung, Generationen und Altern                  3
+[2] Fallverstehen und Fallarbeit                                         4 
+[2] Gender, Migration und Transkultur                                    3 
+[2] Gesprächsführung und Beratung                                        4 
+[2] Grundlagen der Kommunikation                                         3 
+[2] Handlungstheorien der Sozialen Arbeit                                4 
+[2] Neue Entwicklungen, Konzepte und Theorien                            7 
+[2] Spezielle Problemstellungen im Beratungskontext                      2 
+
+
+# 3. Semester
+[3] Gruppenbezogene und gemeinwesenorientierte Methoden                  5
+[3] Organisation, Finanzierung und Management
+sozialwirtschaftlicher Einrichtungen                                     3
+[3] Professioneller Umgang mit belastenden Arbeitssituationen            3
+[3] Präsentation ausgewählter Handlungsfelder 1                          2
+[3] Rechtliche und sozialrechtliche Grundlagen                          11 
+[3] Soziale Arbeit im Kontext von Social Profit Sektor und
+Sozialwirtschaft                                                         3
+[3] Zielorientierung und Evaluation                                      3
+                                                            
+
+# 4. Semester
+[4] Bachelorarbeit 1                                                     5
+[4] Einführung und Vertiefung in die
+sozialversicherungsrechtlichen Grundlagen                                6
+[4] Entwicklungspsychologie der Lebensalter                              4
+[4] Erziehung und Bildung                                                4
+[4] Praxisreflexion                                                      2
+[4] Präsentation ausgewählter Handlungsfelder 2                          2
+[4] Sozialisation                                                        4
+[4] Studienprojekt 1                                                     3
+
+
+# 5. Semester
+[5] Begleitseminar zur Bachelorarbeit 2                                  9 
+[5] Demokratie, Freiheit und Menschenrechte                              2 
+[5] Gesundheitsbezogene Soziale Arbeit                                   2 
+[5] Grundlegende Konzepte von Sozialpolitik                              3 
+[5] Psychiatrie Basics - Psychische Störungen und Suizidalität           3
+[5] Soziale Arbeit und Globalisierung                                    3 
+[5] Spiel- und Erlebnispädagogik                                         2 
+[5] Vertiefung »Kindheit, Jugend und Familie«:
+Lebenslagen, Kinder- und Jugendschutz                                    6
+[5] Vertiefung »Soziale Ungleichheit und sozialer Raum«: Soziale
+Schichtung, Einkommens- und Bildungsungleichheit,
+Sozialraumorientierung als Konzept und Methode                           6
+
+
+# 6. Semester
+[6] International Social Work                                            3 
+[6] Krisenintervention und Psychotraumata                                2 
+[6] New Public Health – Gesundheitsvorsorge, Förderung und Prävention    2
+[6] Praktikum                                                           15 
+[6] Vertiefung »Kindheit, Jugend und Familie«: Sozialpädagogische
+Hilfen, behördliche Kinder- und Jugendhilfe, Studienprojekt 2            8
+[6] Vertiefung »Soziale Ungleichheit und sozialer Raum«: Politische
+Möglichkeiten und Implikationen, Methoden zur Bearbeitung von
+sozialräumlichen Fragen und Ungleichheitsphänomenen,
+Studienprojekt 2                                                         8
