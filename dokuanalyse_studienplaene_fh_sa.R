@@ -6,8 +6,6 @@ require(markdown)
 #library(ggplot2)
 #library(reshape2)
 #library(RSQLite)
-#library(psych)
-#library(xtable)
 
 knit("dokuanalyse_studienplaene_fh_sa.rmd", "dokuanalyse_studienplaene_fh_sa.md")
 markdownToHTML("dokuanalyse_studienplaene_fh_sa.md", "dokuanalyse_studienplaene_fh_sa.html")

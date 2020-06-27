@@ -3,7 +3,7 @@ title: 'Dokumentenanalyse BA-Studienpläne der Sozialen Arbeit in Österreich: Q
   Auswertung reflexiver Lehrveraltungen'
 author: "Paul Sölder"
 output:
-  html_document
+  html_document: default
 ---
 
 Hier sind die Ergebnisse einer Dokumentenanalyse der BA-Studienpläne aller FHs der Sozialen Arbeit in Österreich dargestellt.
@@ -20,8 +20,6 @@ library(pacman)
 library(ggplot2)
 library(reshape2)
 library(RSQLite)
-library(psych)
-library(xtable)
 
 # Funktionsdefinitionen für Min, Max, Median
 colMax <- function(X) apply(X, 2, max)
