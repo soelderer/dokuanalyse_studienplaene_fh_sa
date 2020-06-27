@@ -1,7 +1,7 @@
 require(knitr)
 require(markdown)
 
-# Folgende Pakete sind notwendig und werden in der rmn-Datei geladen:
+# Folgende Pakete sind notwendig und werden in der rmd-Datei geladen:
 #library(pacman)
 #library(ggplot2)
 #library(reshape2)
